@@ -1,0 +1,154 @@
+---
+layout: base.njk
+title: Minimal boilerplate for new projects built with Eleventy, Tailwind and PostCSS
+---
+
+<body id="main" class="bg-gray-900 text-white">
+    <!-- ANNOUNCEMENT BAR COMPONENT -->
+    <div class="announcement-bar">
+        <div class="container bg-gray-900 py-2 text-center text-md">
+            <h3>Our COVID-19 Response</h3>
+        </div>
+    </div>
+
+    <!-- NAVBAR COMPONENT -->
+    <nav class="relative bg-black p-1 text-white">
+        <div class="container mx-auto flex justify-start">
+            <div class="relative block p-4 lg:p-6 text-xl text-white font-bold">
+                <a href="#" class="text-white hover:text-blue-200">Logo</a>
+            </div>
+            <ul class="flex">
+                <!--Regular Link-->
+                <li class="text-white">
+                    <a href="#" class="relative block py-6 px-2 lg:p-6 text-sm lg:text-base font-bold">navlink</a>
+                </li>
+
+                <!--Hoverable Link-->
+                <li class="hoverable text-white">
+                    <a href="#" class="relative block py-6 px-4 lg:p-6 text-sm lg:text-base font-bold text-white">Hover to show</a>
+                    <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-black z-50">
+                        <div class="container mx-auto w-full flex flex-wrap justify-between mx-2">
+                            <div class="w-full text-white mb-8 text-center">
+                                <h2 class="font-bold text-2xl">Listen, why don’t you wait out by the speeder.</h2>
+                                <p>our droids. They’ll have to wait outside. We don’t want them here.</p>
+                            </div>
+                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                                <div class="flex items-center">
+                                    <svg class="h-8 mb-3 mr-3 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
+                                        <path d="M3 6c0-1.1.9-2 2-2h8l4-4h2v16h-2l-4-4H5a2 2 0 0 1-2-2H1V6h2zm8 9v5H8l-1.67-5H5v-2h8v2h-2z"/>
+                                    </svg>
+                                    <h3 class="font-bold text-xl text-white text-bold mb-2">Tatooine</h3>
+                                </div>
+                                <p class="text-gray-100 text-sm">Thul klivian doldur thisspiasian calrissian. Garindan d8 aurra twi'lek tund polis gen'dai sola tarpals.</p>
+                                <div class="flex items-center py-3">
+                                    <svg class="h-6 pr-3 fill-current text-teal-300" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
+                                        <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
+                                    </svg>
+                                    <a href="#" class="text-white bold border-b-2 border-teal-300 hover:text-teal-900">Find out more...</a>
+                                </div>
+                            </ul>
+                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                                <div class="flex items-center">
+                                    <svg class="h-8 mb-3 mr-3 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
+                                        <path d="M4.13 12H4a2 2 0 1 0 1.8 1.11L7.86 10a2.03 2.03 0 0 0 .65-.07l1.55 1.55a2 2 0 1 0 3.72-.37L15.87 8H16a2 2 0 1 0-1.8-1.11L12.14 10a2.03 2.03 0 0 0-.65.07L9.93 8.52a2 2 0 1 0-3.72.37L4.13 12zM0 4c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4z"/>
+                                    </svg>
+                                    <h3 class="font-bold text-xl text-white text-bold mb-2">Cantonica</h3>
+                                </div>
+                                <p class="text-gray-100 text-sm">Thul klivian doldur thisspiasian calrissian. Garindan d8 aurra twi'lek tund polis gen'dai sola tarpals.</p>
+                                <div class="flex items-center py-3">
+                                    <svg class="h-6 pr-3 fill-current text-teal-300" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
+                                        <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
+                                    </svg>
+                                    <a href="#" class="text-white bold border-b-2 border-teal-300 hover:text-teal-900">Find out more...</a>
+                                </div>
+                            </ul>
+                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
+                                <div class="flex items-center">
+                                    <svg class="h-8 mb-3 mr-3 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
+                                        <path d="M2 4v14h14v-6l2-2v10H0V2h10L8 4H2zm10.3-.3l4 4L8 16H4v-4l8.3-8.3zm1.4-1.4L16 0l4 4-2.3 2.3-4-4z"/>
+                                    </svg>
+                                    <h3 class="font-bold text-xl text-white text-bold mb-2">Yavin 4</h3>
+                                </div>
+                                <p class="text-gray-100 text-sm">Thul klivian doldur thisspiasian calrissian. Garindan d8 aurra twi'lek tund polis gen'dai sola tarpals.</p>
+                                <div class="flex items-center py-3">
+                                    <svg class="h-6 pr-3 fill-current text-teal-300" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
+                                        <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
+                                    </svg>
+                                    <a href="#" class="text-white bold border-b-2 border-teal-300 hover:text-teal-900">Find out more...</a>
+                                </div>
+                            </ul>
+                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 pb-6 pt-6 lg:pt-3">
+                                <div class="flex items-center">
+                                    <svg class="h-8 mb-3 mr-3 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
+                                        <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
+                                    </svg>
+                                    <h3 class="font-bold text-xl text-white text-bold mb-2">Alderaan</h3>
+                                </div>
+                                <p class="text-gray-100 text-sm">Thul klivian doldur thisspiasian calrissian. Garindan d8 aurra twi'lek tund polis gen'dai sola tarpals.</p>
+                                <div class="flex items-center py-3">
+                                    <svg class="h-6 pr-3 fill-current text-teal-300" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
+                                        <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
+                                    </svg>
+                                    <a href="#" class="text-white bold border-b-2 border-teal-300 hover:text-teal-900">Find out more...</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!--end Hoverable Link-->
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CARD COMPONENT -->
+    <div class="max-w-xl mx-auto flex flex-col my-5 p-6 bg-white rounded-lg shadow-xl">
+        <div class="flex-shrink-0 flex mx-auto">
+            <img src="/static/icon.svg" alt="Rocket icon" class="w-12 my-4 rocket">
+            <img src="/static/icon.svg" alt="Rocket icon" class="w-12 my-4 rocket">
+            <img src="/static/icon.svg" alt="Rocket icon" class="w-12 my-4 rocket">
+            <img src="/static/icon.svg" alt="Rocket icon" class="w-12 my-4 rocket">
+        </div>
+        <div class="mx-6 pt-1 text-center">
+            <h4 class="text-xl text-gray-900">Tailwind Alert<h4>
+                    <p class="text-base text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odit vitae, unde accusamus ipsa accusantium quia voluptatem ipsum cum sapiente distinctio incidunt ut amet beatae quod quo. Commodi, provident laudantium.</p>
+                </div>
+            </div>
+
+            <!-- COLUMN COMPONENT -->
+            <div class="lg:container mt-5">
+                <!-- Flex layout on medium screens and up -->
+                <div class="lg:flex md:flex-col lg:flex-row">
+                    <div class="flex-1 text-gray-700 text-center bg-gray-400 p-5 m-2 rounded">
+                        <div class="flex flex-col xl:flex-row lg:items-center">
+                            <div class="lg:flex-shrink-0">
+                                <img class="rounded-lg lg:w-64" src="/static/img/bubbles.jpg" alt="Bubbles are fun.">
+                            </div>
+                            <div class="mt-4 lg:mt-1 lg:ml-6">
+                                <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">
+                                    Networking
+                                </div>
+                                <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">
+                                    Finding connections tohelp your business grow.
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 text-gray-700 text-center bg-gray-400 p-5 m-2 rounded">
+                        <div class="flex flex-col xl:flex-row lg:items-center">
+                            <div class="lg:flex-shrink-0">
+                                <img class="rounded-lg lg:w-64" src="/static/img/baby-shoes.jpg" alt="Babies are cute.">
+                            </div>
+                            <div class="mt-4 lg:mt-1 lg:ml-6">
+                                <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">
+                                    Find the one
+                                </div>
+                                <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">
+                                    We can help you find the one you're looking for.
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>

@@ -1,17 +1,153 @@
-
 @import 'utils/_tailwind.css';
 @import 'utils/_accessibility.css';
+@import '../../../node_modules/animate.css/animate.css';
 
 /* purgecss start ignore */
 
-:focus, button:focus {
-    outline: solid  3px rgba(0,0,0,0.05);
-    outline-offset: 4px;
+.hvr-grow {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+	25% {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+
+	75% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+
+@keyframes hvr-pulse {
+	25% {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+
+	75% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+
+.hvr-pulse {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-pulse:hover,
+.hvr-pulse:focus,
+.hvr-pulse:active {
+	-webkit-animation-name: hvr-pulse;
+	animation-name: hvr-pulse;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+nav ul a {
+	text-transform: uppercase;
+}
+
+.mega-menu {
+	display: none;
+	left: 0;
+	position: absolute;
+	text-align: left;
+	width: 100%;
+}
+
+/* #hoverable Class Styles */
+
+.hoverable {
+	position: static;
+}
+
+.hoverable>a:after {
+	content: "\25BC";
+	font-size: 10px;
+	padding-left: 6px;
+	position: relative;
+	top: -1px;
+}
+
+.hoverable:hover .mega-menu {
+	display: block;
+}
+
+/* #toggle Class Styles */
+
+.toggleable>label:after {
+	content: "\25BC";
+	font-size: 10px;
+	padding-left: 6px;
+	position: relative;
+	top: -1px;
+}
+
+.toggle-input {
+	display: none;
+}
+
+.toggle-input:not(checked)~.mega-menu {
+	display: none;
+}
+
+.toggle-input:checked~.mega-menu {
+	display: block;
+}
+
+.toggle-input:checked+label {
+	color: white;
+	background: rgb(3, 102, 114);
+	/*@apply bg-teal-700 */
+}
+
+.toggle-input:checked~label:after {
+	content: "\25B2";
+	font-size: 10px;
+	padding-left: 6px;
+	position: relative;
+	top: -1px;
+}
+
+/* Nav Styles */
+
+:focus,
+button:focus {
+	outline: solid 3px rgba(0, 0, 0, 0.05);
+	outline-offset: 4px;
 }
 
 a {
-	@apply text-ws-blue-500 underline;
+	@apply text-roccat-blue-500;
 }
+
+/* Content Styles */
 
 .rocket {
 	animation: rocket 0.7s linear infinite both;
@@ -22,33 +158,43 @@ a {
 		transform: translate(0);
 		transform: rotate(0);
 	}
+
 	10% {
 		transform: translate(-1px, -1px);
 	}
+
 	20% {
 		transform: translate(1px, -1px);
 	}
+
 	30% {
 		transform: translate(-1px, 1px);
 	}
+
 	40% {
 		transform: translate(1px, 1px);
 	}
+
 	50% {
 		transform: translate(-1px, -1px);
 	}
+
 	60% {
 		transform: translate(1px, -1px);
 	}
+
 	70% {
 		transform: translate(-1px, 1px);
 	}
+
 	80% {
 		transform: translate(-2px, -2px);
 	}
+
 	90% {
 		transform: translate(2px, -2px);
 	}
+
 	100% {
 		transform: translate(0);
 	}
