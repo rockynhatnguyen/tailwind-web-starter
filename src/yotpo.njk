@@ -1,0 +1,47 @@
+---
+layout: base.njk
+title: Minimal boilerplate for new projects built with Eleventy, Tailwind and PostCSS
+---
+
+<body id="main" class="bg-gray-900 text-white">
+    <!-- ANNOUNCEMENT BAR COMPONENT -->
+    <div class="announcement-bar"></div>
+
+    <!-- NAVBAR COMPONENT -->
+    <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+
+        <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto md:flex-row">
+            <div class="relative top-0 flex items-center flex-shrink-0 text-white">
+                <span class="logo font-bold text-xl">MBW Logo</span>
+            </div>
+            <ul class="link-list flex sm:flex-grow md:flex-row md:justify-center text-sm">
+                <li class="link-item">
+                    <a href="/products" class="block mt-4 px-3 py-2 sm:inline-block sm:mt-0 text-teal-200 hover:text-white hvr-pulse">Products</a>
+                </li>
+                <li class="link-item">
+                    <a href="/tech" class="block mt-4 px-3 py-2 sm:inline-block sm:mt-0 text-teal-200 hover:text-white hvr-pulse">Tech</a>
+                </li>
+                <li class="link-item">
+                    <a href="#" class="block mt-4 px-3 py-2 sm:inline-block sm:mt-0 text-teal-200 hover:text-white hvr-pulse">Company</a>
+                </li>
+                <li class="link-item">
+                    <a href="#" class="block mt-4 px-3 py-2 sm:inline-block sm:mt-0 text-teal-200 hover:text-white hvr-pulse">Blog</a>
+                </li>
+                <li class="link-item">
+                    <a href="/yotpo" class="block mt-4 px-3 py-2 sm:inline-block sm:mt-0 text-teal-200 hover:text-white hvr-pulse">Yotpo</a>
+                </li>
+            </ul>
+            <div class="user-functions flex md:flex-row md:justify-start text-md">
+                <div class="search"></div>
+                <a class="account px-2 py-2" href="#">Account</a>
+                <a class="login px-2 py-2" href="#">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <footer class="container text-center text-sm text-gray-500 my-5">
+       <p class="flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 mr-1"><path class="fill-current text-gray-100" d="M32 5H4C1.791 5 0 6.791 0 9v18c0 2.209 1.791 4 4 4h28c2.209 0 4-1.791 4-4V9c0-2.209-1.791-4-4-4z"/><path class="fill-current text-ws-blue-500" d="M13 18S0 8.586 0 8.895v18.21C0 27.414 13 18 13 18zm5 3S3.697 31 4.07 31h27.859C32.303 31 18 21 18 21zm5-3s13 9.414 13 9.105V8.895C36 8.586 23 18 23 18zm-5-3S3.697 5 4.07 5h27.859C32.303 5 18 15 18 15z"/></svg> <span>Proudly crafted in Scotland by <a href="https://www.chriscollins.me">Chris Collins</a></span></p>
+        <p>Go and build something great! 🥳</p>
+    </footer>
+</body>

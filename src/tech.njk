@@ -1,0 +1,139 @@
+---
+layout: base.njk
+title: Tech Page
+---
+
+<body id="main" class="bg-gray-900 text-white">
+    <!-- ANNOUNCEMENT BAR COMPONENT -->
+    <div class="announcement-bar hidden md:block bg-gray-700 text-white px-4 py-2">
+        <p class="text-xs font-medium text-center">
+            We're raising our prices on all products by $1 today in support of the planet.
+            <a class="underline" href="#">Learn more.</a>
+        </p>
+    </div>
+
+    <!-- NAVBAR MOBILE COMPONENT -->
+    <nav class="nav-mobile md:hidden flex items-center justify-between bg-gray-800 p-4">
+        <div class="hamburger w-1/4 flex justify-start">
+            <button class="h-6 w-6 m-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path strokelinecap="round" strokelinejoin="round" strokewidth={1} d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        <div class="logo w-1/2 flex justify-center">
+            <div>
+                <a href="#" title="ROCCAT">
+                    <picture>
+                        <source srcset="https://media.roccat.org/img/frontend/website/roccat-logo-long_w.svg">
+                        <img src="https://media.roccat.org/img/frontend/website/roccat-logo-long_w.png" alt="ROCCAT">
+                    </picture>
+                </a>
+            </div>
+        </div>
+        <div class="user-functions w-1/4 flex justify-end">
+            <button class="user h-6 w-6 m-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path strokelinecap="round" strokelinejoin="round" strokewidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                </svg>
+            </button>
+            <button class="cart h-6 w-6 m-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path strokelinecap="round" strokelinejoin="round" strokewidth={1} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- NAVBAR DESKTOP COMPONENT -->
+    <nav class="nav-desktop hidden md:flex items-center justify-between bg-gray-800 p-4">
+        
+    </nav>
+
+    <div class="md:container bg-gray-700 mx-auto my-8 p-4">
+        <h1 class="text-h1-light-500">This is a container class</h1>
+    </div>
+
+    <div class="md:container mx-auto">
+        <!-- ALERT COMPONENT -->
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative my-5" role="alert">
+            <strong class="font-bold">Alert!</strong>
+            <span class="block sm:inline">Please update your password.</span>
+        </div>
+    </div>
+
+    <!-- CARD COMPONENT -->
+    <div class="max-w-sm mx-auto flex flex-col p-6 bg-white rounded-lg shadow-xl">
+        <div class="flex-shrink-0 flex mx-auto">
+            <img src="/static/icon.svg" alt="Rocket icon" class="w-12 my-4 rocket">
+            <img src="/static/icon.svg" alt="Rocket icon" class="w-12 my-4 rocket">
+            <img src="/static/icon.svg" alt="Rocket icon" class="w-12 my-4 rocket">
+            <img src="/static/icon.svg" alt="Rocket icon" class="w-12 my-4 rocket">
+        </div>
+        <div class="ml-6 pt-1 text-center">
+            <h4 class="text-xl text-gray-900">Tailwind Alert<h4>
+                    <p class="text-base text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odit vitae, unde accusamus ipsa accusantium quia voluptatem ipsum cum sapiente distinctio incidunt ut amet beatae quod quo. Commodi, provident laudantium.</p>
+                </div>
+            </div>
+
+            <!-- COLUMN COMPONENT -->
+            <div class="lg:container mt-5">
+                <!-- Flex layout on medium screens and up -->
+                <div class="lg:flex md:flex-col lg:flex-row">
+                    <div class="flex-1 text-gray-700 text-center bg-gray-400 p-5 m-2 rounded">
+                        <div class="flex flex-col xl:flex-row lg:items-center">
+                            <div class="lg:flex-shrink-0">
+                                <img class="rounded-lg lg:w-64" src="/static/img/bubbles.jpg" alt="Bubbles are fun.">
+                            </div>
+                            <div class="mt-4 lg:mt-1 lg:ml-6">
+                                <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">
+                                    Networking
+                                </div>
+                                <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">
+                                    Finding connections tohelp your business grow.
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 text-gray-700 text-center bg-gray-400 p-5 m-2 rounded">
+                        <div class="flex flex-col xl:flex-row lg:items-center">
+                            <div class="lg:flex-shrink-0">
+                                <img class="rounded-lg lg:w-64" src="/static/img/baby-shoes.jpg" alt="Babies are cute.">
+                            </div>
+                            <div class="mt-4 lg:mt-1 lg:ml-6">
+                                <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">
+                                    Find the one
+                                </div>
+                                <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">
+                                    We can help you find the one you're looking for.
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-center">
+                <img src="/static/icon.svg" alt="Rocket icon" class="w-12 mx-auto my-4 rocket">
+                <h1 class="text-white font-bold text-xl mb-2">JAMStack Web Starter
+                    <span class="font-light text-gray-500">v{{ pkg.version }}</span></h1>
+                <p>Minimal boilerplate for new projects built with Eleventy, Tailwind, PurgeCSS and PostCSS</p>
+
+                <ul class="md:flex my-4">
+                    <li class="md:flex-auto p-2">
+                        <a href="https://github.com/scottishstoater/jamstack-web-starter/zipball/master/" class="block no-underline leading-tight p-3 font-bold border-2 border-roccat-blue-600 bg-roccat-blue-500 text-white rounded hover:bg-roccat-blue-600">Download</a>
+                    </li>
+                    <li class="md:flex-auto p-2">
+                        <a href="https://github.com/scottishstoater/jamstack-web-starter#features" class="block no-underline text-black leading-tight p-3 font-bold border-2 rounded hover:bg-gray-100">Get started</a>
+                    </li>
+                </ul>
+            </div>
+
+            <footer class="container text-center text-sm text-gray-500">
+                <p class="flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 36 36" class="w-4 mr-1"><path class="fill-current text-gray-100" d="M32 5H4C1.791 5 0 6.791 0 9v18c0 2.209 1.791 4 4 4h28c2.209 0 4-1.791 4-4V9c0-2.209-1.791-4-4-4z"/><path class="fill-current text-ws-blue-500" d="M13 18S0 8.586 0 8.895v18.21C0 27.414 13 18 13 18zm5 3S3.697 31 4.07 31h27.859C32.303 31 18 21 18 21zm5-3s13 9.414 13 9.105V8.895C36 8.586 23 18 23 18zm-5-3S3.697 5 4.07 5h27.859C32.303 5 18 15 18 15z"/></svg>
+                    <span>Proudly crafted in Scotland by
+                        <a href="https://www.chriscollins.me">Chris Collins</a></span></p>
+                <p>Go and build something great! 🥳</p>
+            </footer>
+        </body>

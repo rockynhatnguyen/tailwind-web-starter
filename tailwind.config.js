@@ -41,7 +41,13 @@ module.exports = {
       }
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      display: ['group-hover'],
+      scale: ['group-hover'],
+      translate: ['group-hover']
+    }
+  },
   plugins: [],
   purge: process.env.NODE_ENV === 'production' ? {
     enabled: true,

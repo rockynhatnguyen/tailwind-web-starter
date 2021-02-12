@@ -1,0 +1,103 @@
+body {
+    height: 200vh;
+}
+
+.slider .slick-track {
+    display: flex;
+}
+
+.slide .links {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    bottom: 0;
+    width: 100%;
+}
+
+.film-strip .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    padding-top: 20px;
+    height: 50px;
+    width: 100%;
+    list-style-type: none;
+}
+
+.film-strip li button {
+    font-size: 0px;
+}
+
+.film-strip li.slick-active button,
+.film-strip li button:hover {
+    background: black;
+    padding: 3px 0;
+    transform: translateY(-3px);
+}
+
+.film-strip li button {
+    transition: ease all .4s;
+    border-radius: 3px;
+    height: .25px;
+    width: 30px;
+    margin: 20px 5px;
+    padding: 1px 0;
+    border: none;
+    color: black;
+    background-color: black;
+
+    @media (min-width: 480px) {
+        width: 60px;
+    }
+}
+
+.film-strip .slick-arrow {
+    color: black;
+    font-size: 0px;
+}
+
+.film-strip .slick-prev,
+.film-strip .slick-next {
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+}
+
+.film-strip .slick-next {
+    right: 50px;
+}
+
+.film-strip .slick-next:after {
+    content: "\f054";
+}
+
+.film-strip .slick-prev {
+    left: 10px;
+}
+
+.film-strip .slick-prev:after {
+    content: "\f053";
+}
+
+.film-strip .slick-prev:after,
+.film-strip .slick-next:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    color: rgb(45, 43, 43);
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: lightgray;
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: ease all .3s;
+}
+
+.film-strip .slick-prev:after:hover,
+.film-strip .slick-next:after:hover {
+    background: #666;
+}

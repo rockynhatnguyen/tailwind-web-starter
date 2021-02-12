@@ -1,0 +1,187 @@
+---
+layout: base.njk
+title: Minimal boilerplate for new projects built with Eleventy, Tailwind and PostCSS
+---
+
+<body id="main" class="bg-gray-900 text-white">
+    <!-- ANNOUNCEMENT BAR COMPONENT -->
+    <div class="announcement-bar"></div>
+
+    <!-- NAVBAR COMPONENT -->
+    <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+        <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto md:flex-row">
+            <div class="relative top-0 flex items-center flex-shrink-0 text-white">
+                <span class="logo font-bold text-xl">Roccat USA</span>
+            </div>
+            <ul class="link-list flex sm:flex-grow md:flex-row md:justify-center text-sm">
+                <li class="link-item">
+                    <a href="/products" class="block mt-4 px-3 py-2 sm:inline-block sm:mt-0 text-teal-200 hover:text-white hvr-pulse">Products</a>
+                </li>
+                <li class="link-item">
+                    <a href="/tech" class="block mt-4 px-3 py-2 sm:inline-block sm:mt-0 text-teal-200 hover:text-white hvr-pulse">Tech</a>
+                </li>
+                <li class="link-item">
+                    <a href="#" class="block mt-4 px-3 py-2 sm:inline-block sm:mt-0 text-teal-200 hover:text-white hvr-pulse">Company</a>
+                </li>
+                <li class="link-item">
+                    <a href="#" class="block mt-4 px-3 py-2 sm:inline-block sm:mt-0 text-teal-200 hover:text-white hvr-pulse">Blog</a>
+                </li>
+                <li class="link-item">
+                    <a href="/yotpo" class="block mt-4 px-3 py-2 sm:inline-block sm:mt-0 text-teal-200 hover:text-white hvr-pulse">Yotpo</a>
+                </li>
+            </ul>
+            <div class="user-functions flex md:flex-row md:justify-start text-md">
+                <div class="search"></div>
+                <a class="account px-2 py-2" href="#">Account</a>
+                <a class="login px-2 py-2" href="#">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="max-w-full mx-auto bg-white mt-12 px-10 py-12">
+        <h1 class="flex justify-center pb-6 text-2xl text-black uppercase">Our Gaming Gear</h1>
+        <!-- Slider Start -->
+        <div class="film-strip slider px-6">
+            <div class="slide group mx-2 md:mx-4 w-full lg:min-w-1/4">
+                <div class="overflow-hidden relative">
+                    <div class="image-box">
+                        <img class="w-full transform group-hover:scale-125 transition duration-500 ease-in-out" src="https://picsum.photos/seed/dog/400/340" alt="This is a photo">
+                    </div>
+                    <div class="links absolute z-10 flex flex-col items-center pt-16 pb-20 translate-y-24 transform group-hover:translate-y-12 transition duration-500 ease-in-out">
+                        <a class="main-link text-2xl text-white" href="#" tabindex="0">Mice</a>
+                        <ul class="sub-links flex flex-col items-center">
+                            <li><a class="link-item text-sm text-white opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out" href="#">Wired</a></li>
+                            <li><a class="link-item text-sm text-white opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out" href="#">Wireless</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slide group mx-2 md:mx-4 w-full lg:min-w-1/4">
+                <div class="overflow-hidden relative">
+                    <div class="image-box">
+                        <img class="w-full transform group-hover:scale-125 transition duration-500 ease-in-out" src="https://picsum.photos/seed/moon/400/340" alt="This is a photo">
+                    </div>
+                    <div class="links absolute z-10 flex flex-col items-center pt-16 pb-20 translate-y-24 transform group-hover:translate-y-12 transition duration-500 ease-in-out">
+                        <a class="main-link text-2xl text-white" href="#" tabindex="0">Mice</a>
+                        <ul class="sub-links flex flex-col items-center">
+                            <li><a class="link-item text-sm text-white opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out" href="#">Wired</a></li>
+                            <li><a class="link-item text-sm text-white opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out" href="#">Wireless</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slide group mx-2 md:mx-4 w-full lg:min-w-1/4">
+                <div class="overflow-hidden relative">
+                    <div class="image-box">
+                        <img class="w-full transform group-hover:scale-125 transition duration-500 ease-in-out" src="https://picsum.photos/seed/bird/400/340" alt="This is a photo">
+                    </div>
+                    <div class="links absolute z-10 flex flex-col items-center pt-16 pb-20 translate-y-24 transform group-hover:translate-y-12 transition duration-500 ease-in-out">
+                        <a class="main-link text-2xl text-white" href="#" tabindex="0">Mice</a>
+                        <ul class="sub-links flex flex-col items-center">
+                            <li><a class="link-item text-sm text-white opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out" href="#">Wired</a></li>
+                            <li><a class="link-item text-sm text-white opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out" href="#">Wireless</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slide group mx-2 md:mx-4 w-full lg:min-w-1/4">
+                <div class="overflow-hidden relative">
+                    <div class="image-box">
+                        <img class="w-full transform group-hover:scale-125 transition duration-500 ease-in-out" src="https://picsum.photos/seed/game/400/340" alt="This is a photo">
+                    </div>
+                    <div class="links absolute z-10 flex flex-col items-center pt-16 pb-20 translate-y-24 transform group-hover:translate-y-12 transition duration-500 ease-in-out">
+                        <a class="main-link text-2xl text-white" href="#" tabindex="0">Mice</a>
+                        <ul class="sub-links flex flex-col items-center">
+                            <li><a class="link-item text-sm text-white opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out" href="#">Wired</a></li>
+                            <li><a class="link-item text-sm text-white opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out" href="#">Wireless</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slide group mx-2 md:mx-4 w-full lg:min-w-1/4">
+                <div class="overflow-hidden relative">
+                    <div class="image-box">
+                        <img class="w-full transform group-hover:scale-125 transition duration-500 ease-in-out" src="https://picsum.photos/seed/cat/400/340" alt="This is a photo">
+                    </div>
+                    <div class="links absolute z-10 flex flex-col items-center pt-16 pb-20 translate-y-24 transform group-hover:translate-y-12 transition duration-500 ease-in-out">
+                        <a class="main-link text-2xl text-white" href="#" tabindex="0">Mice</a>
+                        <ul class="sub-links flex flex-col items-center">
+                            <li><a class="link-item text-sm text-white opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out" href="#">Wired</a></li>
+                            <li><a class="link-item text-sm text-white opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out" href="#">Wireless</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slide group mx-2 md:mx-4 w-full lg:min-w-1/4">
+                <div class="overflow-hidden relative">
+                    <div class="image-box">
+                        <img class="w-full transform group-hover:scale-125 transition duration-500 ease-in-out" src="https://picsum.photos/seed/lady/400/340" alt="This is a photo">
+                    </div>
+                    <div class="links absolute z-10 flex flex-col items-center pt-16 pb-20 translate-y-24 transform group-hover:translate-y-12 transition duration-500 ease-in-out">
+                        <a class="main-link text-2xl text-white" href="#" tabindex="0">Mice</a>
+                        <ul class="sub-links flex flex-col items-center">
+                            <li><a class="link-item text-sm text-white opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out" href="#">Wired</a></li>
+                            <li><a class="link-item text-sm text-white opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out" href="#">Wireless</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slide group mx-2 md:mx-4 w-full lg:min-w-1/4">
+                <div class="overflow-hidden relative">
+                    <div class="image-box">
+                        <img class="w-full transform group-hover:scale-125 transition duration-500 ease-in-out" src="https://picsum.photos/seed/pic/400/340" alt="This is a photo">
+                    </div>
+                    <div class="links absolute z-10 flex flex-col items-center pt-16 pb-20 translate-y-24 transform group-hover:translate-y-12 transition duration-500 ease-in-out">
+                        <a class="main-link text-2xl text-white" href="#" tabindex="0">Mice</a>
+                        <ul class="sub-links flex flex-col items-center">
+                            <li><a class="link-item text-sm text-white opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out" href="#">Wired</a></li>
+                            <li><a class="link-item text-sm text-white opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out" href="#">Wireless</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slider End -->
+    </article>
+
+    <footer class="container text-center text-sm text-gray-500 my-5">
+        <p class="flex items-center justify-center">
+            <span>&copy; Roccat USA 2021</span></p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+
+    <script type="text/javascript">
+        $('.film-strip').slick({
+            dots: true,
+            arrows: true,
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            speed: 300,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4
+                    }
+                }, {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
